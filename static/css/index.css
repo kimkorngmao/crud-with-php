@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blog-content {
+    margin-top: 70px; /* Adjust based on the height of your navbar */
+}
