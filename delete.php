@@ -1,5 +1,5 @@
 <?php
-    require_once("helpers/server.php");
+    include("helpers/server.php");
     if(isset($_GET["id"])){
         $id =   $_GET['id'];
         $query = "DELETE FROM blog WHERE id=$id";

@@ -1,4 +1,3 @@
-<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
     <div class="container-md">
         <!-- Logo on the Left -->

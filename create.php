@@ -1,3 +1,23 @@
+<?php
+    include("helpers/server.php");
+
+    if(isset($_POST['create'])){
+        $title = $_POST['title'];
+        $content = $_POST['content'];
+        $author = $_POST['author'];
+
+        $query = "INSERT INTO Blog (title, content, author) VALUES ('$title', '$content', '$author')";
+        $isSuccess = $connection->query($query);
+
+        if($isSuccess){
+            header("Location: index.php");
+            exit();
+        }else{
+            echo "Sorry, something when wrong!";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,22 +56,3 @@
 </body>
 
 </html>
-
-<?php
-    require_once("helpers/server.php");
-
-    if(isset($_POST['create'])){
-        $title = $_POST['title'];
-        $content = $_POST['content'];
-        $author = $_POST['author'];
-
-        $query = "INSERT INTO Blog (title, content, author) VALUES ('$title', '$content', '$author')";
-        $isSuccess = $connection->query($query);
-
-        if($isSuccess){
-            header("Location: index.php");
-            exit();
-        }else{
-            echo "Sorry, something when wrong!";
-        }
-    }

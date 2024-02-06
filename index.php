@@ -1,7 +1,7 @@
 <?php
-require_once("helpers/server.php");
-$query = "SELECT * FROM blog ORDER BY created_at DESC";
-$result = $connection->query($query);
+    include("helpers/server.php");
+    $query = "SELECT * FROM blog ORDER BY created_at DESC";
+    $result = $connection->query($query);
 ?>
 
 <!DOCTYPE html>

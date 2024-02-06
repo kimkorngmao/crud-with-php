@@ -1,5 +1,5 @@
 <?php
-    require_once("helpers/server.php");
+    include("helpers/server.php");
     function getRecord($conn, $id){
         $query = "SELECT * FROM blog where id=$id";
 

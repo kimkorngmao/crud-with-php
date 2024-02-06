@@ -43,5 +43,5 @@ git clone https://github.com/yourusername/your-crud-system.git
 
 ## Preview
 
-![System Preview](/path/to/preview-image.png)
+![System Preview]()
 

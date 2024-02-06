@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
+    scrollbar-width: 0;
+}
 
+*::-webkit-scrollbar{
+    display: none;
 }
 
 #navbar {
@@ -11,5 +15,5 @@
 }
 
 #blog-content {
-    margin-top: 70px; /* Adjust based on the height of your navbar */
+    margin-top: 70px;
 }
