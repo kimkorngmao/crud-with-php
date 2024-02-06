@@ -42,6 +42,10 @@ git clone https://github.com/yourusername/your-crud-system.git
 2. Navigate through the CRUD operations using the provided user interface.
 
 ## Preview
+![image_2024-02-06_12-30-44](https://github.com/kimkorngmao/crud-with-php/assets/112237746/64052856-59c6-4ea6-8909-16f936876764)
+![image](https://github.com/kimkorngmao/crud-with-php/assets/112237746/bf837c58-89d2-44f6-a844-8eee6f6a8bfa)
+![image](https://github.com/kimkorngmao/crud-with-php/assets/112237746/4cb2df14-86c5-4299-8c16-a27dc59e917b)
 
-![System Preview]()
+
+
 
