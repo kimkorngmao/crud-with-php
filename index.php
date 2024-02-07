@@ -26,7 +26,8 @@
                     <div class="col-md-7 p-3 rounded mx-auto offset-md-2 border mb-3">
                         <h1 class="h5"><?php echo htmlspecialchars($row['title']); ?></h1>
                         <p><?php echo htmlspecialchars($row['content']); ?></p>
-                        <div class="text-secondary"><?php echo htmlspecialchars($row['created_at']); ?></div>
+                        <p class="mb-0"><?php echo htmlspecialchars($row['content']); ?></p>
+                        <div><small class="text-secondary"><span>By <?php echo $row['author']; ?></span> - <?php echo htmlspecialchars($row['created_at']); ?></small></div>
                         <div class="btn-group mt-3">
                             <!-- Replace '#' with the actual update and delete URLs -->
                             <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Update</a>
