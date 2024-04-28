@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    scrollbar-width: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blog-content {
+    margin-top: 70px;
+}
