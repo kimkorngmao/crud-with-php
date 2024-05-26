@@ -25,7 +25,6 @@
                 <div class="row">
                     <div class="col-md-7 p-3 rounded mx-auto offset-md-2 border mb-3">
                         <h1 class="h5"><?php echo htmlspecialchars($row['title']); ?></h1>
-                        <p><?php echo htmlspecialchars($row['content']); ?></p>
                         <p class="mb-0"><?php echo htmlspecialchars($row['content']); ?></p>
                         <div><small class="text-secondary"><span>By <?php echo $row['author']; ?></span> - <?php echo htmlspecialchars($row['created_at']); ?></small></div>
                         <div class="btn-group mt-3">

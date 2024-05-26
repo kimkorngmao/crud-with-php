@@ -2,9 +2,9 @@
     include("helpers/server.php");
 
     if(isset($_POST['create'])){
-        $title = mysqli_real_escape_string($_POST['title']);
-        $content = mysqli_real_escape_string($_POST['content']);
-        $author = mysqli_real_escape_string($_POST['author']);
+        $title = mysqli_real_escape_string($connection, $_POST['title']);
+        $content = mysqli_real_escape_string($connection, $_POST['content']);
+        $author = mysqli_real_escape_string($connection, $_POST['author']);
         $query = "INSERT INTO blog(title, content, author) VALUES ('$title', '$content', '$author')";
         $isSuccess = $connection->query($query);
 
