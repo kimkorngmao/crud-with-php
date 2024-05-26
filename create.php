@@ -2,18 +2,17 @@
     include("helpers/server.php");
 
     if(isset($_POST['create'])){
-        $title = $_POST['title'];
-        $content = $_POST['content'];
-        $author = $_POST['author'];
-
-        $query = "INSERT INTO Blog (title, content, author) VALUES ('$title', '$content', '$author')";
+        $title = mysqli_real_escape_string($_POST['title']);
+        $content = mysqli_real_escape_string($_POST['content']);
+        $author = mysqli_real_escape_string($_POST['author']);
+        $query = "INSERT INTO blog(title, content, author) VALUES ('$title', '$content', '$author')";
         $isSuccess = $connection->query($query);
 
         if($isSuccess){
             header("Location: index.php");
             exit();
         }else{
-            echo "Sorry, something when wrong!";
+            echo 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam qui nesciunt totam quos. Hic harum corporis deserunt, cumque perferendis id et recusandae enim molestiae doloribus. Sunt minus ducimus cupiditate modi?';
         }
     }
 ?>
