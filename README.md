@@ -28,7 +28,7 @@ A basic CRUD (Create, Read, Update, Delete) system implemented using PHP for bac
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/maokimkorng/crud-with-php.git
+git clone https://github.com/kimkorngmao/crud-with-php.git
 ```
 
 2. Set up your web server to point to the project directory.
